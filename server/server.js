@@ -46,6 +46,9 @@ app.use("/api/status", (req, res)=> res.send("Server is live"));
 app.use("/api/auth", userRouter);
 app.use("/api/messages", messageRouter)
 
+app.get('/', (req, res) => {
+  res.send('Hello from backend!');
+});
 
 // Connect to MongoDB
 await connectDB();
@@ -57,5 +60,3 @@ await connectDB();
 });
 
 
-// Export server for Vervel
-export default server;

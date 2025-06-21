@@ -1,1 +1,27 @@
-node_modules
+# Ignore node_modules everywhere
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Ignore .env files
+.env
+client/.env
+server/.env
+
+# Build outputs
+dist/
+dist-ssr/
+
+# Logs
+*.log
+logs/
+
+# Editor settings and system files
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
